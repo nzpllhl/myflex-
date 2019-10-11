@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #box {
+            padding: 30px;
+            width: 90%;
+            background: pink;
+            margin: 50px auto;
+            /* float: left;可以解决浮动*/
+            display: flex;
+            flex-wrap: wrap;
+            /* justify-content: flex-start; 左边开始对齐*/
+            /* justify-content: flex-end; 右边快开始对齐*/
+            /* justify-content: space-between; */
+            /* 两边对齐 */
+            justify-content: space-around;
+            /* 上对齐 flex-start ||下对齐 cifles-end ||  居中center */
+            align-items: center;
+
+        }
+
+        .one {
+            width: 100px;
+            background: red;
+        }
+
+        .two {
+            width: 150px;
+            background: yellow;
+            /*  */
+            /* align-self: flex-end; */
+
+        }
+
+        .thrre {
+            width: 300px;
+            background: violet;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box">
+        <div class="one">
+            <h2>1111111111</h2>
+            <p>我最开始吃猕猴桃就用手剥皮，像吃橘子似的，后来用刀切，像吃橙子似的，
+                现在才知道，原来上一刀、下一刀，然后用勺子转一圈就行了，
+                这些年折腾的我啊！！</p>
+        </div>
+        <div class="two">
+            <h2>22222222222</h2>
+            <p>我最开始吃猕猴桃就用手剥皮，像吃橘子似的，后来用刀切，像吃橙子似的，
+                现在才知道，原来上一刀、下一刀，然后用勺子转一圈就行了，
+                这些年折腾的我啊！！</p>
+        </div>
+        <div class="thrre">
+            <h2>3333333333 </h2>
+            <p>我最开始吃猕猴桃就用手剥皮，像吃橘子似的，后来用刀切，像吃橙子似的，
+                现在才知道，原来上一刀、下一刀，然后用勺子转一圈就行了，
+                这些年折腾的我啊！！</p>
+        </div>
+    </div>
+</body>
+
+</html>

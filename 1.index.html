@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./mui-master/dist/css/mui.css">
+    <!-- 登陆框的样式 -->
+    <link rel="stylesheet" href="./css/register.css">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            overflow: hidden;
+        }
+
+        .box {
+            width: 100%;
+            height: 100%;
+            transition: 1s;
+        }
+
+        .box h4 {
+            font-size: 15px;
+        }
+
+        .manbox {
+            height: 99vh;
+            width: 100%;
+            background: #fff;
+            /* display: none; */
+        }
+
+        .mantitle {
+            border-bottom: 1px solid #efeff4;
+        }
+
+        .manbox .context {
+            width: 100%;
+        }
+
+        .manbox .context h4 {
+            color: #807b77;
+            margin-left: 43px;
+            margin-top: 22px;
+        }
+
+        .manbox .context .mans {
+            width: 100%;
+            height: 500px;
+        }
+
+        .manbox .context .mans li {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+            list-style: none;
+            position: relative;
+        }
+
+        .manbox .context .mans img {
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        .manbox .context .mans span {
+            width: 200px;
+            display: inline-block;
+            text-align: center;
+            position: absolute;
+            top: 160px;
+        }
+
+        .manbox .mantitle h4 {
+            height: 45px;
+            line-height: 45px;
+            text-align: center;
+            position: relative;
+        }
+
+        .manbox .three {
+            position: absolute;
+            top: 19px;
+            left: 24px;
+            z-index: 99;
+        }
+
+        .title {
+            border-bottom: 1px solid #efeff4;
+        }
+
+        .title h4 {
+            height: 45px;
+            line-height: 45px;
+            background: #fff;
+            text-align: center;
+            position: relative;
+        }
+
+        .timers {
+            width: 100%;
+            height: 99vh;
+            background: #fff;
+        }
+
+        .timers .title3 h4 {
+            height: 45px;
+            line-height: 45px;
+            background: #fff;
+            text-align: center;
+            position: relative;
+        }
+
+
+
+        .mui-btn-block {
+            margin-top: 50px;
+        }
+
+        #demo4 {
+            margin-bottom: 290px;
+        }
+
+
+
+        .mui-input-row {
+            margin-top: 30px;
+
+        }
+
+        .mui-content-padded {
+            padding-top: 25px;
+            color: #807b77;
+
+        }
+
+        .title img {
+            position: absolute;
+            top: 22px;
+            left: 24px;
+            z-index: 99;
+
+        }
+
+        .mui-card {
+            margin: 0;
+            height: 99vh;
+            /* display: none; */
+        }
+
+
+
+        .content {
+            height: 100vh;
+            position: relative;
+            background: #ffff;
+            /* display: none; */
+        }
+
+        .content .title2 {
+            position: relative;
+        }
+
+        .title2 {
+            border-bottom: 1px solid #efeff4;
+        }
+
+        .content .title2 h4 {
+            height: 45px;
+            line-height: 45px;
+            background: #fff;
+            text-align: center;
+            position: relative;
+
+        }
+
+        .content .title2 .imgs {
+            position: absolute;
+            top: 11px;
+            left: 29px;
+
+        }
+
+        .content .imgs2 {
+            width: 200px;
+            height: 200px;
+            margin-left: 54px;
+            margin-top: 83px;
+
+        }
+
+        .content h3 {
+            color: #807b77;
+            margin-left: 113px;
+            margin-top: 50px;
+        }
+
+        .content #next2 {
+            margin-left: 114px;
+        }
+
+        .content #next3 {
+            margin-left: 62px;
+            font-size: 14px;
+
+        }
+
+        .content .t {
+            color: lawngreen;
+        }
+
+        .content p {
+            text-align: center;
+            margin-top: 35px;
+
+        }
+
+        .mui-radio input[type='radio']:checked:before,
+        .mui-checkbox input[type='checkbox']:checked:before {
+            color: #f0ad4e;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="box">
+        <div class="manbox">
+            <div class="mantitle">
+                <img src="./img/路径.png" alt="" class="three">
+                <h4>选择性别</h4>
+            </div>
+            <div class="context">
+                <h4>请选择你的性别</h4>
+                <ul class="mans">
+                    <li>
+                        <img src="./img/头像 (女-).png" alt="">
+                        <span>女士</span>
+                    </li>
+                    <li>
+                        <img src="./img/头像 (男-).png" alt="">
+                        <span>男士</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="timers">
+            <div class="mantitle">
+                <img src="./img/路径.png" alt="" class="three">
+                <h4>选规日期</h4>
+            </div>
+            <h4 class="mui-content-padded">请选择你的出生日期</h4>
+            <button id='demo4' data-options='{"type":"date"}' class="btn mui-btn mui-btn-block">选择日期</button>
+            <button id="btn2" type="button" class="mui-btn mui-btn-warning mui-btn-block">确定</button>
+        </div>
+        </div>
+        <div class="mui-card">
+            <div class="title">
+                <img src="./img/路径.png" alt="" class="three">
+                <h4>选择的表现</h4>
+            </div>
+            <h4 class="mui-content-padded">请选择的符合你的症状(单选题)</h4>
+            <form class="mui-input-group">
+                <div class="mui-input-row mui-radio">
+                    <label>既往有吸烟史</label>
+                    <input name="radio1" type="radio">
+                </div>
+                <div class="mui-input-row mui-radio">
+                    <label>既往无有吸烟史</label>
+                    <input name="radio1" type="radio" checked>
+                </div>
+                <div class="mui-input-row mui-radio">
+                    <label>有毛刺征</label>
+                    <input name="radio1" type="radio" checked>
+                </div>
+                <div class="mui-input-row mui-radio">
+                    <label>无毛刺征</label>
+                    <input name="radio1" type="radio" checked>
+                </div>
+                <button id="btn" type="button" class="mui-btn mui-btn-warning mui-btn-block">提交...</button>
+            </form>
+        </div>
+        <div class="content">
+            <div class="title2">
+                <h4>反馈结果</h4>
+                <img class="imgs three" src="./img/路径.png" alt="">
+            </div>
+            <img class="imgs2" src="./img/1绿绿.png" alt="">
+            <h3 id="next">恭喜你！</h3>
+            <p>已完成本阶段康复，明日进入下一阶段~</p>
+        </div>
+        <div class="content">
+            <div class="title2">
+                <h4>反馈结果</h4>
+                <img class="imgs three" src="./img/路径.png" alt="">
+            </div>
+            <img class="imgs2" src="./img/编组.png" alt="">
+            <h3 id="next2">很遗憾...</h3>
+            <p>你还未完成基本阶段的测评请在接再励！</p>
+        </div>
+        <div class="content">
+            <div class="title2">
+                <h4>测评分数</h4>
+                <img class="imgs three" src="./img/路径.png" alt="">
+            </div>
+            <img class="imgs2" src="./img/编组 2.png" alt="">
+            <h3 id="next3">根据你回答的情况，你的得分为87分！</h3>
+            <p class="t">你的身体等待你的呼唤，快加入康复中心吧！</p>
+        </div>
+        <!-- <div class="form-wrapper">
+            <div class="banner"></div>
+            <form id="form">
+                <div class="item-wrapper"><label for="username">手机号码：</label><input type="text" name="username"
+                        id="username" value=""></div>
+                <div class="item-wrapper"><label for="password">密码：</label><input type="password" name="password"
+                        id="password" value=""></div>
+                <input type="button" value="登陆" id="submit">
+                <input type="button" value="注册" id="register">
+            </form>
+            <p id="info">请输入信息</p> -->
+        </div>
+    </main>
+
+    <script>
+        //获取每一个li
+        const mans = document.querySelectorAll('.mans li');
+        let ih = window.innerHeight;
+        //点击li的时候获取下一张页面
+        const threes = document.querySelectorAll('.three');
+        mans.forEach(ele => {
+            ele.onclick = function () {
+                transform();
+            }
+        })
+        btn2.onclick = function () {
+            transform(2);
+        }
+        btn.onclick = function () {
+            //做判断
+            if (true) {
+                transform(3);
+            }
+        }
+        next.onclick = function () {
+            //做判断
+            transform(4)
+        }
+        next2.onclick = function () {
+            //做判断
+            transform(5)
+        }
+        next3.onclick = function () {
+            //做判断
+            alert('已经是最后一项了')
+            transform(6);
+        }
+        // submit.onclick = function () {
+        //     transform(5);
+        // }
+        //点击每一个箭头的时候回退到后一页
+        threes.forEach((ele, i) => {
+            ele.onclick = function () {
+                console.log(i);
+                if (i !== 0) {
+                    transform(i - 1);
+                }
+            }
+        })
+        function transform(num = 1) {
+            document.querySelector('.box').style.transform = `translateY(-${ih * num}px)`;
+        }
+    </script>
+</body>
+
+</html>
