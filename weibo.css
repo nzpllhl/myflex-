@@ -3,11 +3,11 @@
 }
 
 /* 头部搜索框布局 */
-#searchCnt{
+ #searchCnt{
     padding: 10px;
     background: #FFF;
 
-}
+} 
 .searchbox{
     background: #e3e4e6;
     border-radius: 5px;
