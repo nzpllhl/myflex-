@@ -3,7 +3,18 @@
 }
 
 /* 头部搜索框布局 */
+body{
+    max-width: 650px;
+    min-width: 320px;
+
+}
+
  #searchCnt{
+    max-width: 650px;
+    min-width: 320px;
+    width: 100%;
+    position: fixed;
+    top:0; 
     padding: 10px;
     background: #FFF;
 
